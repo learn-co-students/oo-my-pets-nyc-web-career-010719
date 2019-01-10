@@ -1,3 +1,13 @@
+require_relative './owner'
+require 'pry'
+
 class Cat
-  # code goes here
+
+  attr_accessor :mood
+  attr_reader :name
+
+  def initialize(name = "crookshanks", mood = "nervous")
+    @name = name
+    @mood = mood
+  end
 end
